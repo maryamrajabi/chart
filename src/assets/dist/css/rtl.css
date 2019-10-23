@@ -1,0 +1,702 @@
+/*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';*/
+/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
+
+/*.iransans {*/
+    /*font-family: "IRANSans", Helvetica, Arial, sans-serif !important;*/
+/*}*/
+
+/*.navbar-custom-menu > .navbar-nav > li > .dropdown-menu {*/
+    /*max-height: 300px;*/
+    /*right: auto;*/
+    /*overflow-y: scroll;*/
+/*}*/
+
+/*!* sweet alert *!*/
+/*.swal-text {*/
+    /*text-align: center;*/
+/*}*/
+
+/*!* width *!*/
+/*.w-25 {*/
+    /*width: 25% !important;*/
+/*}*/
+
+/*!* background color *!*/
+/*.bg-white {*/
+    /*background: #fff !important;*/
+/*}*/
+
+/*.mat-form-field, .mat-option-text, .mat-optgroup-label {*/
+    /*text-align: right !important;*/
+    /*font-family: "IRANSans", Helvetica, Arial, sans-serif;*/
+/*}*/
+
+/*.example-form {*/
+    /*min-width: 150px;*/
+    /*max-width: 500px;*/
+    /*width: 100%;*/
+/*}*/
+
+/*.example-full-width {*/
+    /*width: 100%;*/
+/*}*/
+
+/*.no-active {*/
+    /*pointer-events: none;*/
+    /*cursor: default;*/
+    /*text-decoration: none;*/
+    /*color: black;*/
+/*}*/
+
+/*!*.mat-form-field-label-wrapper {*!*/
+/*!*line-height: 17px;*!*/
+/*!*}*!*/
+
+/*!*.mat-form-field-appearance-legacy .mat-form-field-wrapper {*!*/
+/*!*padding-bottom: 2.46em !important;*!*/
+/*!*}*!*/
+
+/*.mat-select-trigger {*/
+    /*height: 2.425em !important;*/
+/*}*/
+
+/*.hiddenRow {*/
+    /*padding: 0 !important;*/
+/*}*/
+
+/*input.mat-input-element {*/
+    /*margin-top: .5em;*/
+/*}*/
+
+/*input.ng-touched.ng-invalid + span {*/
+    /*color: #dd4b39;*/
+/*}*/
+
+/*.mat-form-field-appearance-legacy .mat-hint strong {*/
+    /*line-height: 10px;*/
+    /*font-size: .9em;*/
+/*}*/
+
+/*!*date picker*!*/
+/*.DatePickerIcon {*/
+    /*left: 10px;*/
+    /*top: 30px;*/
+/*}*/
+
+/*.mat-calendar-table-header tr:nth-child(2) {*/
+    /*display: none;*/
+/*}*/
+
+/*!*.sidebar-menu li a .fa-angle-left,*!*/
+/*!*.sidebar-menu li .label, .sidebar-menu li .badge {*!*/
+/*!*margin-top: -15px !important;*!*/
+/*!*}*!*/
+
+/*!*.sidebar-menu li a .fa-angle-left{*!*/
+/*!*margin-top: -15px !important;*!*/
+/*!*}*!*/
+
+/*.multiselect-dropdown .dropdown-btn {*/
+    /*min-height: 35px !important;*/
+/*}*/
+
+/*.select2-container--default .select2-selection--single .select2-selection__arrow {*/
+    /*right: auto !important;*/
+    /*left: 2px;*/
+/*}*/
+
+/*.select2-container--default .select2-selection--single .select2-selection__rendered {*/
+    /*text-align: right;*/
+/*}*/
+
+/*.select2-container--default .select2-selection--single {*/
+    /*background-color: #fff !important;*/
+    /*border: 1px solid #d2d6de !important;*/
+    /*border-radius: 0 !important;*/
+    /*height: 35px !important;*/
+/*}*/
+
+/*.listImag li {*/
+    /*margin: 5px;*/
+/*}*/
+
+/*.listImag li span {*/
+    /*margin-left: 5px;*/
+/*}*/
+
+/*!*toggle menu*!*/
+
+/*.main-sidebar.toggled {*/
+    /*width: 0 !important;*/
+/*}*/
+
+/*!* paggination *!*/
+/*.pagination li {*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*!* color *!*/
+/*.text-white {*/
+    /*color: #fff;*/
+/*}*/
+
+/*.text-danger {*/
+    /*color: #ea0500;*/
+/*}*/
+
+/*.text-white:hover {*/
+    /*color: #000000;*/
+/*}*/
+
+/*!*change image*!*/
+/*.btn-browser-img {*/
+    /*padding: 10px;*/
+    /*background: #3c8dbc;*/
+    /*color: #fff;*/
+/*}*/
+
+/*.imgProduct {*/
+    /*position: relative;*/
+/*}*/
+
+/*.imgProduct:hover .btn-browser-img {*/
+    /*display: block;*/
+/*}*/
+
+/*.imgProduct:hover > img {*/
+    /*opacity: .5;*/
+/*}*/
+
+/*.imgProduct .btn-browser-img {*/
+    /*position: absolute;*/
+    /*!* margin: 0 auto; *!*/
+    /*top: 80px;*/
+    /*!* left: 0; *!*/
+    /*right: 20%;*/
+    /*width: 90px;*/
+    /*display: none;*/
+/*}*/
+
+/*.imageSlider {*/
+    /*height: 200px;*/
+    /*display: inline-block;*/
+    /*padding: 5px;*/
+/*}*/
+
+/*@media all and (min-width: 426px) {*/
+
+    /*.logo.toggled {*/
+        /*display: none;*/
+    /*}*/
+
+    /*.logo.toggled + .navbar.navbar-static-top {*/
+        /*margin-right: 0;*/
+    /*}*/
+/*}*/
+
+/*.p2 {*/
+    /*padding: 2px;*/
+/*}*/
+
+/*.pl-5 {*/
+    /*padding-left: 5px !important;*/
+/*}*/
+
+/*.pl-15 {*/
+    /*padding-left: 15px !important;*/
+/*}*/
+
+/*.pr-15 {*/
+    /*padding-right: 15px !important;*/
+/*}*/
+
+/*.pr-5 {*/
+    /*padding-right: 5px !important;*/
+/*}*/
+
+/*.m2 {*/
+    /*margin: 2px;*/
+/*}*/
+
+/*span.required {*/
+    /*color: red;*/
+    /*margin: 0 5px;*/
+/*}*/
+
+/*.position-absolute {*/
+    /*position: absolute;*/
+/*}*/
+
+/*!* input *!*/
+/*input[type=number]::-webkit-inner-spin-button {*/
+    /*opacity: 1;*/
+/*}*/
+
+/*input[type=number]::-webkit-inner-spin-button,*/
+/*input[type=number]::-webkit-outer-spin-button {*/
+    /*-webkit-appearance: none !important;*/
+    /*-moz-appearance: none !important;*/
+    /*appearance: none !important;*/
+    /*margin: 0;*/
+/*}*/
+
+/*input[type=number] {*/
+    /*-moz-appearance: textfield;*/
+/*}*/
+
+/*!*line height*!*/
+/*.lh40 {*/
+    /*line-height: 40px;*/
+/*}*/
+
+/*!*text direction*!*/
+/*.text-left {*/
+    /*text-align: left !important;*/
+/*}*/
+
+/*!*page header*!*/
+/*.page-content .page-header {*/
+    /*background-color: #fcfcfc;*/
+    /*margin: 0;*/
+    /*padding: 20px;*/
+    /*box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*!*table*!*/
+/*.panel > .table-responsive {*/
+    /*border: 0;*/
+    /*margin: 0 auto;*/
+    /*width: 98%;*/
+/*}*/
+
+/*!*font weigth*!*/
+/*.strong {*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*!*badge*!*/
+/*.badge {*/
+    /*font-weight: 100;*/
+/*}*/
+
+/*.my-bagde-parent {*/
+    /*width: fit-content;*/
+    /*padding-left: 10px;*/
+    /*display: inline*/
+/*}*/
+
+/*.my-bagde-child {*/
+    /*border: 1px solid #337ab7;*/
+    /*!*margin-right: 4px;*!*/
+    /*background: #337ab7;*/
+    /*padding: 0 5px;*/
+    /*color: #fff;*/
+    /*border-radius: 2px;*/
+    /*margin: 5px auto;*/
+    /*display: inline-block*/
+/*}*/
+
+/*.my-bagde-close {*/
+    /*padding-top: 2px;*/
+    /*padding-left: 2px;*/
+    /*color: white;*/
+/*}*/
+
+/*.badge.badge-icon {*/
+    /*padding: 0 !important;*/
+/*}*/
+
+/*.badge {*/
+    /*border-radius: 2px;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 800;*/
+    /*padding-left: 3px !important;*/
+/*}*/
+
+/*.badge span {*/
+    /*padding: 0 3px 0 5px;*/
+/*}*/
+
+/*.badge-success {*/
+    /*background-color: #51bf87;*/
+/*}*/
+
+/*.badge.badge-icon i {*/
+    /*padding: 6px;*/
+    /*margin-left: 1px;*/
+/*}*/
+
+/*.badge-danger {*/
+    /*background-color: #db5565;*/
+/*}*/
+
+/*.badge-warning {*/
+    /*background-color: #f39c12;*/
+/*}*/
+
+/*.badge-info {*/
+    /*background-color: rgba(72, 150, 207, 0.4);*/
+/*}*/
+
+/*.badge.badge-warning.badge-icon i {*/
+    /*background-color: rgba(208, 127, 0, 0.58);*/
+/*}*/
+
+/*.badge.badge-success.badge-icon i {*/
+    /*background-color: rgba(4, 84, 56, 0.4);*/
+/*}*/
+
+/*.badge.badge-danger.badge-icon i {*/
+    /*background-color: rgba(170, 5, 5, 0.4);*/
+/*}*/
+
+/*!*multi select*!*/
+
+/*.multiselect-item-checkbox input[type=checkbox] + div {*/
+    /*padding-right: 2em;*/
+/*}*/
+
+/*.multiselect-item-checkbox input[type=checkbox] + div:before {*/
+    /*left: auto !important;*/
+    /*right: 0 !important;*/
+/*}*/
+
+/*.multiselect-dropdown .dropdown-btn {*/
+    /*text-align: right !important;*/
+    /*position: relative;*/
+/*}*/
+
+/*.multiselect-dropdown .dropdown-btn span:nth-child(2) {*/
+    /*float: left !important;*/
+    /*display: none;*/
+/*}*/
+
+/*.multiselect-dropdown .dropdown-btn:after {*/
+    /*content: '\00bb';*/
+    /*position: absolute;*/
+    /*transform: rotate(-90deg);*/
+    /*left: 10px;*/
+    /*top: 0;*/
+    /*transition: .5s;*/
+    /*font-size: 1.5em;*/
+    /*padding: 0 !important;*/
+/*}*/
+
+/*!*.multiselect-dropdown .dropdown-btn:hover:after{*!*/
+/*!*transform: rotate(90deg);*!*/
+/*!*transition: .5s;*!*/
+/*!*}*!*/
+/*span.selected-item:first-child {*/
+    /*margin-left: 15px;*/
+/*}*/
+
+/*.dropdown-list li {*/
+    /*text-align: right !important;*/
+/*}*/
+
+/*table {*/
+    /*border-collapse: collapse;*/
+    /*width: 100%;*/
+/*}*/
+
+/*th, td {*/
+    /*text-align: right;*/
+    /*padding: 8px;*/
+/*}*/
+
+/*th {*/
+    /*background: #e8e8e8;*/
+    /*color: #1a2226;*/
+    /*padding: 10px 5px !important;*/
+/*}*/
+
+/*!*z-index*!*/
+/*.z-index-9 {*/
+    /*z-index: 9;*/
+/*}*/
+
+/*!*btn*!*/
+/*.btn {*/
+/*}*/
+
+/*.btn-group-sm > .btn, .btn-sm {*/
+    /*padding: 2px 5px;*/
+/*}*/
+
+/*.border-ddd {*/
+    /*border: 1px solid #ddd !important;*/
+/*}*/
+
+/*!*material form *!*/
+/*.mat-form-field {*/
+    /*text-align: right;*/
+    /*border: 1px solid #d2d6de;*/
+    /*height: 35px;*/
+/*}*/
+
+/*.mat-form-field-appearance-legacy .mat-form-field-infix {*/
+    /*border: 0 !important;*/
+    /*padding: 0 !important;*/
+/*}*/
+
+/*!* Change Autocomplete styles in Chrome*!*/
+/*input:-webkit-autofill,*/
+/*input:-webkit-autofill:hover,*/
+/*input:-webkit-autofill:focus,*/
+/*textarea:-webkit-autofill,*/
+/*textarea:-webkit-autofill:hover,*/
+/*textarea:-webkit-autofill:focus,*/
+/*select:-webkit-autofill,*/
+/*select:-webkit-autofill:hover,*/
+/*select:-webkit-autofill:focus {*/
+    /*-webkit-text-fill-color: #555;*/
+    /*-webkit-box-shadow: 0 0 0 1000px #fff inset;*/
+    /*transition: background-color 5000s ease-in-out 0s;*/
+/*}*/
+
+/*!*slide toggle*!*/
+/*.switch {*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*width: 50px;*/
+    /*height: 25px;*/
+/*}*/
+
+/*.switch input {*/
+    /*display: none;*/
+/*}*/
+
+/*.slider {*/
+    /*position: absolute;*/
+    /*cursor: pointer;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*background-color: #ccc;*/
+    /*-webkit-transition: .4s;*/
+    /*transition: .4s;*/
+/*}*/
+
+/*.slider:before {*/
+    /*position: absolute;*/
+    /*content: "";*/
+    /*height: 17px;*/
+    /*width: 17px;*/
+    /*left: 4px;*/
+    /*bottom: 4px;*/
+    /*background-color: white;*/
+    /*-webkit-transition: .4s;*/
+    /*transition: .4s;*/
+/*}*/
+
+/*input:checked + .slider {*/
+    /*background-color: #28a745;*/
+/*}*/
+
+/*input:focus + .slider {*/
+    /*box-shadow: 0 0 1px #2196F3;*/
+/*}*/
+
+/*input:checked + .slider:before {*/
+    /*-webkit-transform: translateX(26px);*/
+    /*-ms-transform: translateX(26px);*/
+    /*transform: translateX(26px);*/
+/*}*/
+
+/*!* Rounded sliders *!*/
+/*.slider.round {*/
+    /*border-radius: 34px;*/
+/*}*/
+
+/*.slider.round:before {*/
+    /*border-radius: 50%;*/
+/*}*/
+
+/*!*profile-invoice*!*/
+/*.profile-invoice li {*/
+    /*line-height: 35px;*/
+/*}*/
+
+/*!**!*/
+/*.example-form {*/
+    /*max-width: 523px !important;*/
+/*}*/
+
+/*!*max height*!*/
+/*.maxh300 {*/
+    /*max-height: 300px;*/
+    /*overflow-y: scroll;*/
+    /*height: auto;*/
+    /*min-height: 300px;*/
+/*}*/
+
+/*!*display*!*/
+/*.d-inline-block {*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.warningMessage {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*top: -40px;*/
+    /*color: red;*/
+    /*background: #f9f9f9;*/
+    /*padding: 10px;*/
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*width: 200px;*/
+/*}*/
+
+/*.keyWordP {*/
+    /*padding: 1px 30px 1px 10px;*/
+    /*border: 1px solid #dcdcdc;*/
+    /*border-radius: 5px;*/
+/*}*/
+
+/*!*add attr button*!*/
+/*.addMeAttr {*/
+    /*margin: 0 2px 0 0;*/
+    /*width: 80px;*/
+    /*padding: 7px 0;*/
+/*}*/
+
+/*!*margin*!*/
+/*.mt-20 {*/
+    /*margin-top: 20px;*/
+/*}*/
+
+/*.mb-5 {*/
+    /*margin-bottom: 5px;*/
+/*}*/
+
+/*.mr-5 {*/
+    /*margin-right: 5px !important;*/
+/*}*/
+
+/*.m-5 {*/
+    /*margin: 5px !important;*/
+/*}*/
+
+/*.form-control-feedback {*/
+    /*left: auto !important;*/
+    /*right: 0 !important;*/
+/*}*/
+
+/*!* webkit solution *!*/
+/*::-webkit-input-placeholder {*/
+    /*text-align: right;*/
+/*}*/
+
+/*!* mozilla solution *!*/
+/*input:-moz-placeholder {*/
+    /*text-align: right;*/
+/*}*/
+
+/*!*login*!*/
+/*.loginForm .form-control {*/
+    /*padding-right: 30px !important;*/
+/*}*/
+
+/*!*mat-tab-label*!*/
+/*.mat-tab-label .mat-tab-label-content, label, .mat-select-value-text {*/
+    /*font-family: IRANSans, serif !important;*/
+/*}*/
+
+/*.mat-select-value-text {*/
+    /*padding: 5px 20px;*/
+/*}*/
+
+/*.mat-select-value {*/
+    /*line-height: 30px;*/
+/*}*/
+
+/*.mat-tab-header {*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*!*cursor*!*/
+/*.cursor-pointer {*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.cursor-ignore {*/
+    /*cursor: not-allowed;*/
+/*}*/
+
+/*!*checkbox*!*/
+/*!* The container *!*/
+/*label.check {*/
+    /*!*display: block;*!*/
+    /*!*position: relative;*!*/
+    /*!*padding-left: 35px;*!*/
+    /*!*margin-bottom: 12px;*!*/
+    /*!*cursor: pointer;*!*/
+    /*!*font-size: 22px;*!*/
+    /*!*-webkit-user-select: none;*!*/
+    /*!*-moz-user-select: none;*!*/
+    /*!*-ms-user-select: none;*!*/
+    /*!*user-select: none;*!*/
+/*}*/
+
+/*!* Hide the browser's default checkbox *!*/
+/*label.check input {*/
+    /*position: absolute;*/
+    /*opacity: 0;*/
+    /*cursor: pointer;*/
+    /*height: 0;*/
+    /*width: 0;*/
+/*}*/
+
+/*!* Create a custom checkbox *!*/
+/*.checkmark {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*!*left: 0;*!*/
+    /*right: 0;*/
+    /*!*margin: 0 auto;*!*/
+    /*height: 25px;*/
+    /*width: 25px;*/
+    /*background-color: #eee;*/
+/*}*/
+
+/*!* On mouse-over, add a grey background color *!*/
+/*label.check:hover input ~ .checkmark {*/
+    /*background-color: #ccc;*/
+/*}*/
+
+/*!* When the checkbox is checked, add a blue background *!*/
+/*label.check input:checked ~ .checkmark {*/
+    /*background-color: #239ade;*/
+/*}*/
+
+/*!* Create the checkmark/indicator (hidden when not checked) *!*/
+/*.checkmark:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*display: none;*/
+/*}*/
+
+/*!* Show the checkmark when checked *!*/
+/*label.check input:checked ~ .checkmark:after {*/
+    /*display: block;*/
+/*}*/
+
+/*!* Style the checkmark/indicator *!*/
+/*label.check .checkmark:after {*/
+    /*left: 9px;*/
+    /*top: 5px;*/
+    /*width: 7px;*/
+    /*height: 12px;*/
+    /*border: solid white;*/
+    /*border-width: 0 3px 3px 0;*/
+    /*-webkit-transform: rotate(45deg);*/
+    /*-ms-transform: rotate(45deg);*/
+    /*transform: rotate(45deg);*/
+/*}*/
+
+/*.messages-menu.position-relative {*/
+    /*position: relative !important;*/
+/*}*/

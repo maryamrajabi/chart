@@ -1,0 +1,8 @@
+<!--<mat-checkbox>Check me!</mat-checkbox>-->
+<form class="example-form" dir="rtl">
+  <mat-form-field>
+    <mat-select placeholder="Toppings" [formControl]="toppings" multiple [(value)]="selected">
+      <mat-option *ngFor="let topping of toppingList" [value]="topping" (click)="sendMessage(selected)">{{topping}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

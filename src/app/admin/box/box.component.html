@@ -1,0 +1,29 @@
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <!-- small box -->
+    <div class="small-box box-custom small-box-header">
+        <div class="inner">
+            <select class="pull-left text-white bg-purple-light cursor-pointer border-1-white-radius">
+                <option>نمایش: سه ماه اول</option>
+            </select>
+            <p class="text-white p-5-10 fs-1-8">{{boxTitle}}</p>
+        </div>
+        <div class="small-box-body text-white position-relative">
+            <div class="position-absolute text-box">
+                <div class="gradient" [ngStyle]="{'background-image':getColor()}">
+                    <p class="letter-spacing-1">{{title1}}</p>
+                    <p [ngStyle]="{'color': color}"><span class="fs-2 pl-5 number">{{count | number}}</span><span>{{unit}}</span></p>
+                </div>
+                <div class="gradient"
+                     [ngStyle]="{ 'background-image': 'linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 95%)'}">
+                    <p class="letter-spacing-1">{{title2}}</p>
+                    <p><span class="fs-2 pl-5 number">{{totals | number}}</span><span>{{unit}}</span></p>
+                </div>
+            </div>
+            <div class="overflow-hidden">
+                <app-chart [myChartID]="id" [color]="color" [total]="totals" [Count]="count" [chartTyp]="'pie'"
+                           [totalCount]="totalCount"></app-chart>
+            </div>
+        </div>
+        <!--<a class="small-box-footer" routerLink="/products">نمایش <i class="fa fa-arrow-circle-left"></i></a>-->
+    </div>
+</div>

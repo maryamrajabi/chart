@@ -1,0 +1,31 @@
+<!--<mat-checkbox>Check me!</mat-checkbox>-->
+<!--<form [formGroup]="stateForm" class="example-form" dir="rtl">-->
+<!--<mat-form-field class="example-full-width">-->
+<!--<input type="text" matInput placeholder="انتخاب" formControlName="stateGroup" required [matAutocomplete]="autoGroup" multiple>-->
+<!--<mat-autocomplete #autoGroup="matAutocomplete" >-->
+<!--<mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter" >-->
+<!--<mat-option *ngFor="let name of group.names" [value]="name">-->
+<!--{{name}}-->
+<!--</mat-option>-->
+<!--</mat-optgroup>-->
+<!--</mat-autocomplete>-->
+<!--</mat-form-field>-->
+<!--<mat-form-field  class="example-full-width">-->
+<!--<mat-select [placeholder]="Toppings" [formControl]="toppings" multiple [(value)]="selected">-->
+<!--<mat-option *ngFor="let topping of toppingList" [value]="topping" (click)="sendMessage(selected)">{{topping}}</mat-option>-->
+<!--</mat-select>-->
+<!--</mat-form-field>-->
+<!--</form>-->
+<form class="example-form">
+    <mat-form-field class="example-full-width" dir="rtl">
+        <mat-icon matSuffix>keyboard_arrow_down</mat-icon>
+        <input [readonly]="readonly" matInput aria-label="State" [class.cursor-ignore]="ignore" [matAutocomplete]="auto" [formControl]="stateCtrl" [ngModel]="selectedData">
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let state of filteredStates | async" [value]="state.name"
+                        (onSelectionChange)="sendMessage($event, i, state.id)">
+                <span>{{state.name}}</span>
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+    <br>
+</form>

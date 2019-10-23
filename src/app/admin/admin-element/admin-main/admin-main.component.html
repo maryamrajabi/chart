@@ -1,0 +1,137 @@
+<div id="id01" class="modal">
+
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="closest"
+                  title="بستن">&times;</span>
+        </div>
+
+        <div class="container" style="width: 100%; height: 70vh;direction: ltr">
+            <app-chart class="radarChart" [chartTyp]="'radar'" [myChartIDRadar]="'myChartRadar1'"
+                       [values]="values"></app-chart>
+            <div class="rightList">
+                <ul class="list-unstyled">
+                    <li *ngFor="let arr of listArray;let i = index;">
+                        <span class="squar" [style.backgroundColor]="arr.color"></span>
+                        <span class="listText">{{arr.name}}</span>
+                    </li>
+                </ul>
+            </div>
+            <!--<app-chart class="radarChart" [chartTyp]="'radar'" [myChartIDRadar]="'myChartRadar1'"-->
+            <!--[values]="[consumers_count, transactions_sum, other_transactions_sum, invoice_transactions_sum, providers_count, users_has_chicken_activity_count]"></app-chart>-->
+        </div>
+    </form>
+</div>
+
+<!-- Content Wrapper. Contains page content -->
+<div>
+    <div class="w-95 block-center">
+        <section class="content">
+            <div class="row">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a class="text-orange font-weight-bold">نمودار تراکنش های یوفارم
+                            <span class="btn btn-orange btn-custom">UFARM TRGT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-orange font-weight-bold">
+                            <span class="btn btn-orange btn-custom font-weight-bold"
+                                  onclick="document.getElementById('id01').style.display='block'">نمودار رادار</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row tab-body">
+                <app-box [id]="'myChart1'" [boxTitle]="'تراکنش مستقیم'" [color]="'#ff3b30'" [color2]="'255, 59, 48'"
+                         [count]="invoice_transactions_sum" [totals]="transactions_sum_total"
+                         [totalCount]="'20000000000'" [title1]="'میزان تراکنش های مستقیم سه ماهه اول'" [unit]="'تومان'"
+                         [title2]="'میزان کل تراکنش های مستقیم'"></app-box>
+                <app-box [id]="'myChart2'" [boxTitle]="'تراکنش غیرمستقیم'" [color]="'#e0881f'" [color2]="'224, 136, 31'"
+                         [count]="other_transactions_sum" [totals]="transactions_sum_total"
+                         [totalCount]="'10000000000'" [title1]="'میزان تراکنش های غیرمستقیم سه ماهه اول'" [unit]="'تومان'"
+                         [title2]="'میزان کل تراکنش های غیرمستقیم'"></app-box>
+                <app-box [id]="'myChart3'" [boxTitle]="'تراکنش مجموع'" [color]="'#ffcc00'" [color2]="'255, 204, 0'"
+                         [count]="transactions_sum" [totals]="transactions_sum_total"
+                         [totalCount]="'10000000000'" [title1]="'میزان تراکنش مجموع سه ماهه اول'" [unit]="'تومان'"
+                         [title2]="'میزان کل تراکنش ها'"></app-box>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="row">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a class="text-blue-light font-weight-bold">نمودار شاخص های عملکرد یوفارم
+                            <span class="btn btn-blue-light btn-custom">UFARM KPI</span>
+                        </a>
+                    </li>
+                    <!--<li>-->
+                    <!--<a class="text-orange font-weight-bold">-->
+                    <!--<span class="btn btn-dark-blue btn-custom font-weight-bold">نمودار رادار</span>-->
+                    <!--</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+
+            <div class="row tab-body">
+                <app-box [id]="'myChart4'" [boxTitle]="'مشتریان'" [color]="'#5856d6'" [color2]="'88, 86, 214'"
+                         [count]="consumers_count" [totals]="consumers_count_total"
+                         [totalCount]="'16'" [title1]="'تعداد مشتریان سه ماهه اول'" [unit]="'نفر'"
+                         [title2]="'تعداد کل مشتریان'"></app-box>
+                <app-box [id]="'myChart5'" [boxTitle]="'تامین کنندگان'" [color]="'#007aff'" [color2]="'0, 122, 255'"
+                         [count]="providers_count"
+                         [totals]="providers_count_total" [totalCount]="'10'"
+                         [title1]="'تعداد تامین کنندگان سه ماهه اول'" [unit]="'نفر'"
+                         [title2]="'تعداد کل تامین کنندگان'"></app-box>
+                <app-box [id]="'myChart6'" [boxTitle]="'مرغداران'" [color]="'#5ac8fa'" [color2]="'90, 200, 250'"
+                         [count]="users_has_chicken_activity_count" [totals]="users_has_chicken_activity_count_total"
+                         [totalCount]="'30'" [title1]="'تعداد مرغداران سه ماهه اول'" [unit]="'نفر'"
+                         [title2]="'تعداد کل مرغداران'"></app-box>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="row">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a class="text-green-light font-weight-bold">نمودار فاکتورهای موفقیت یوفارم
+                            <span class="btn btn-green-light btn-custom">UFARM KPI</span>
+                        </a>
+                    </li>
+                    <!--<li>-->
+                    <!--<a class="text-orange font-weight-bold">-->
+                    <!--<span class="btn btn-dark-blue btn-custom font-weight-bold">نمودار رادار</span>-->
+                    <!--</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+
+            <div class="row tab-body">
+                <app-box [id]="'myChart7'" [boxTitle]="'اینستاگرام'" [color]="'#31be1f'" [color2]="'49, 190, 31'"
+                         [count]="number_follower_instagram" [totals]="'500'"
+                         [totalCount]="'100'" [title1]="'تعداد فالوورهای سه ماه اول'" [unit]="'نفر'"
+                         [title2]="'تعداد کل فالوورها'"></app-box>
+                <app-box [id]="'myChart8'" [boxTitle]="'اینستاگرام'" [color]="'#00ff4e'" [color2]="'0, 255, 78'"
+                         [count]="number_post"
+                         [totals]="'90'" [totalCount]="'90'" [title1]="'تعداد پست های سه ماه اول'" [unit]="'نفر'"
+                         [title2]="'تعداد کل پست ها'"></app-box>
+                <app-box [id]="'myChart9'" [boxTitle]="'اینستاگرام'" [color]="'#00ffae'" [color2]="'0, 255, 174'"
+                         [count]="number_like" [totals]="'50'"
+                         [totalCount]="'20'" [title1]="'تعداد لایک های سه ماه اول'" [unit]="'نفر'"
+                         [title2]="'تعداد کل لایک ها'"></app-box>
+                <app-box [id]="'myChart10'" [boxTitle]="'تلگرام'" [color]="'#00ffd5'" [color2]="'0, 255, 213'"
+                         [count]="number_follower_telegram"
+                         [totals]="'500'" [totalCount]="'400'" [title1]="'تعداد فالوورهای سه ماه اول'" [unit]="'نفر'"
+                         [title2]="'تعداد کل فالوورها'"></app-box>
+                <app-box [id]="'myChart11'" [boxTitle]="'تلگرام'" [color]="'#00ffff'" [color2]="'0, 255, 255'"
+                         [count]="number_post_telegram" [totals]="'100'"
+                         [totalCount]="'100'" [title1]="'تعداد پست های سه ماه اول'" [unit]="'نفر'"
+                         [title2]="'تعداد کل پست ها'"></app-box>
+            </div>
+        </section>
+
+
+    </div><!-- /.content-wrapper -->
+</div>

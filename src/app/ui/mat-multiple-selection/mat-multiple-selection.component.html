@@ -1,0 +1,18 @@
+<div class="basic-container custom-form">
+    <!--<h3>Multiple selection</h3>-->
+    <p>
+        <mat-form-field class="example-full-width">
+            <mat-select [formControl]="bankMultiCtrl" [placeholder]="placeholder" [multiple]="true" #multiSelect
+                        (selectionChange)="sendMessage($event)">
+                <ngx-mat-select-search [noEntriesFoundLabel]="'جستجو یافت نشد'" [placeholderLabel]="'جستجو'"
+                                       [formControl]="bankMultiFilterCtrl"></ngx-mat-select-search>
+                <!--<mat-option disabled="disabled" class="filter-option">-->
+                <!--<input type="checkbox" (click)="selectAll(checkAll.checked, bankMultiCtrl, filteredBanksMulti)" #checkAll>-->
+                <!--</mat-option>-->
+                <mat-option *ngFor="let bank of filteredBanksMulti | async" [value]="bank" (onSelectionChange)="destroy($event)">
+                    {{bank.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </p>
+</div>

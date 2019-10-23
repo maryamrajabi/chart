@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div *ngIf="response">
+            <div *ngIf="response.status;else fail">
+                <!--<p>{{response.message}}</p>-->
+                <!--<p>{{response.data.id}}</p>-->
+                <div class="alert alert-success" role="alert">
+                    {{messageTitle}}
+                    {{response.data.name}}
+                    با موفقیت {{messageAction}} شد
+                </div>
+            </div>
+            <ng-template #fail>
+                <!--<p>{{response.message}}</p>-->
+                <div class="alert alert-warning" role="alert">
+                    لطفا اطلاعات فرم را با دقت پر کنید
+                </div>
+                <div *ngIf="response.error">
+                    <div *ngFor="let item of response.error | keyvalue">
+                        {{item.key}}:{{item.value}}
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>

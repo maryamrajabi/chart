@@ -1,0 +1,16 @@
+<label>{{labelText}}</label>
+<form [formGroup]="myForm">
+  <ng-multiselect-dropdown
+          #unit
+          name="unit"
+          [placeholder]="placeholder"
+          [data]="Datas"
+          [(ngModel)]="selectedDatas"
+          formControlName="Data"
+          [settings]="dropdownSettings"
+          (onDeSelect)="onDataDeSelect($event)"
+          (onSelect)="onDataSelect($event)"
+          (onSelectAll)="onSelectAll($event)"
+          (onDeSelectAll)="onDeSelectAll($event)">
+  </ng-multiselect-dropdown>
+</form>

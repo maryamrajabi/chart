@@ -1,0 +1,7 @@
+export interface IAttributesValues {
+    id: number;
+    add_once_sale_id: number;
+    value: string;
+    created_at: string;
+    updated_at: string;
+}

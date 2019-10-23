@@ -1,0 +1,8 @@
+<div style="left: 35px;" class="position-absolute float-left" *ngIf="item.delete">
+  <a routerLink="/{{item.url}}/trash" class="btn btn-dropbox btn-add-logo ml10" *ngIf="showTrash">حذف شده ها</a>
+  <a routerLink="/{{item.url}}/create" class="btn btn-success btn-add-logo">ایجاد {{item.name}}</a>
+</div>
+<div style="left: 35px;" class="position-absolute float-left" *ngIf="!item.delete">
+  <a routerLink="/{{item.url}}" class="btn btn-dropbox btn-add-logo ml10">نمایش همه</a>
+  <a routerLink="/{{item.url}}/create" class="btn btn-success btn-add-logo">ایجاد {{item.name}}</a>
+</div>
